@@ -374,7 +374,7 @@ addLayer("ach", {
             onComplete() {player[this.layer].points = player[this.layer].points.add(1)}
         },
         72: {
-            name: "7 Rows Done?",
+            name: "7 Rows Done die?",
             unlocked() {return (player.two.total.gte("1") && hasAchievement(this.layer, 71)) || hasAchievement(this.layer, this.id)},
             done() {return new Decimal(player.two.upgrades.length).gte("5")},
             goalTooltip: "Buy 5 two upgrades.",
@@ -1850,7 +1850,7 @@ addLayer("one", {
                 return hasUpgrade('two', 21)
             },
             cost(x) {
-                let scale = new Decimal (1)
+                let scale = new Decimal (2)
                 let scale1 = getBuyableAmount(this.layer, this.id).sub(5).max(0).times(0.5)
                 let cost = new Decimal (4).mul(scale)
                 return cost.floor()

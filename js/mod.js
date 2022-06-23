@@ -1,14 +1,14 @@
 let modInfo = {
-	name: "The Numbruh Tree",
-	id: "JHTNT",
+	name: "The Numbruh Tree 2",
+	id: "JHTNT2",
 	author: "JeehanMoment",
-	pointsName: "points",
+	pointsName: "numbrth points",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "JeehanMoment's Modded stuffs",
-	discordLink: "https://discord.gg/4mPMTVJGf3",
-	initialStartPoints: new Decimal (0), // Used for hard resets and new players
-	offlineLimit: 1,  // In hours
+	discordLink: "https://unicode.org",
+	initialStartPoints: new Decimal (10), // Used for hard resets and new players
+	offlineLimit: 24,  // In hours
 }
 
 // Set your version in num and name
@@ -17,34 +17,10 @@ let VERSION = {
 	name: "B&B",
 }
 
-let changelog = `<h1>Changelog:</h1><br>
-    <h2>Warning: This mod may be unbalanced</h2><br>
-	<h3>V.1.2.1 - Bombs and Bricks Part 1<h3><br>
-		- Added 14 new Acievements.<br>
-		- Added 1 Automators.<br>
-		- Added 3 new Buyables.<br>
-		- Added 5 new Generators.<br>
-		- Added 6 new Upgrades.<br>
-		Endgame: 1e5 total twos<br>
-	<h3>V.1.1 - Automatic, Generators, Volatility and a new layer</h3><br>
-		- Added 4 new Layers.<br>
-		- Added 20 new Acievements.<br>
-		- Added 3 Automators.<br>
-		- Added 1 new Buyables.<br>
-		- Added 5 Generators.<br>
-		- Added 1 Accelerator.<br>
-		- Added 20 new Upgrades.<br>
-		- Added 1 new Volatility Upgrades.<br>
-		Endgame: 10 total twos<br>
-	<h3>V.1 - Start</h3><br>
-		- Added 3 Layers.<br>
-		- Added 12 Achievements.<br>
-		- Added 1 Buyable.<br>
-		- Added 17 Upgrades.<br>
-		Endgame: 3 total ones`
+let changelog = `x_x`
 	
 
-let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
+let winText = `Congratulations! You have reached the end and your do that this game, but for now for legacy...`
 
 // If you add new functions anywhere inside of a layer, and those functions have an effect when called, add them here.
 // (The ones here are examples, all official functions are already taken care of)
@@ -88,9 +64,9 @@ function addedPlayerData() { return {
 
 // Display extra things at the top of the page
 var displayThings = [
-	() => `<br>If you found a bug Please contact JeehanMoment#6268 on Discord.`,
+	() => `<br>If you found a bug Please contact Unicode on Discord.`,
 	"<br>",
-	() => player.keepGoing ? `You're past endgame. The Game may not balanced after this.` : ""
+	() => player.keepGoing ? `You're past endgame. at these The Game may not balanced  after this.` : ""
 ]
 
 // Determines when the game "ends"
@@ -109,7 +85,7 @@ var backgroundStyle = {
 
 // You can change this if you have things that can be messed up by long tick lengths
 function maxTickLength() {
-	return(3600) // Default is 1 hour which is just arbitrarily large
+	return(86400) // Default is 1 hour which is just arbitrarily large
 }
 
 // Use this if you need to undo inflation from an older version. If the version is older than the version that fixed the issue,

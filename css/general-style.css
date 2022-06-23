@@ -11,12 +11,12 @@ body {
 /* General text */
 h1, h2, h3, b, input {
 	display: inline;
-	font-family: "Lucida Console", "Courier New", monospace
+	font-family: "Comic Sans MS", "Courier New", monospace
 }
 
 /* These are styles for different states of components. You can make layer-specific versions with .c.locked, for example */
 .locked {
-	background-color: #bf8f8f;
+	background-color: #ff1212;
 	cursor: not-allowed;
 }
 
@@ -31,7 +31,7 @@ h1, h2, h3, b, input {
 }
 
 .bought {
-	background-color: #77bf5f;
+	background-color: #d7cb2b;
 	cursor: default;
 }
 

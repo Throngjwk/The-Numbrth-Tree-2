@@ -1,4 +1,4 @@
-# Infoboxes
+# Infoboxes tree
 
 Infoboxes are good for displaying "lore", or story elements, as well as for explaining complicated things.
 
